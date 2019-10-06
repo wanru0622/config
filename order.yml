@@ -8,7 +8,7 @@ spring:
     password: root
     username: root
     driver-class-name: com.mysql.jdbc.Driver
-env: env1
+env: env1111111
 #自定义规则
 PRODUCT: #服务的名字
   ribbon:
