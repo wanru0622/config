@@ -1,0 +1,15 @@
+server:
+  port: 8006
+spring:
+  application:
+    name: product
+  datasource:
+    url: jdbc:mysql://localhost/springcloud_sell
+    password: root
+    username: root
+    driver-class-name: com.mysql.jdbc.Driver
+env: env
+#自定义规则
+PRODUCT: #服务的名字
+  ribbon:
+    NFLoadBalancerRuleClassName: com.netflix.loadbalancer.WeightedResponseTimeRule
